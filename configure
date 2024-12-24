@@ -115,7 +115,7 @@ then
 
 	show_config
 
-	pushd ${script_dir} 1> /dev/null 2> /dev/null
+	pushd "${script_dir}" 1> /dev/null 2> /dev/null
 
 	cp config config.tmp
 
@@ -125,6 +125,11 @@ then
 	popd 1> /dev/null 2> /dev/null
 
 	echo 新配置已在config.tmp中
+
+	if [ "${LIVEKITNAME}" != "linux" ]
+	then
+		echo 需要手动执行 sudo ./tools/isolinux.bin.update 更新启动文件。
+	fi
 
 else
 	echo 工具不支持！
