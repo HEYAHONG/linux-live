@@ -32,3 +32,8 @@ Linux Live一般指无需安装，可直接运行的Linux运行方式，类似�
 
 - 见最终打包文件的[readme.txt](bootinfo.txt).
 - 其核心为vmlinuz与initrfs.img文件，这两个文件可用于第一阶段的加载,第一阶段加载完成后，可通过多种方式(如网络启动)加载打包的系统。
+
+# 脚本说明
+
+- [build](build):打包当前系统。
+- [configure](configure):生成适合当前系统的推荐配置（默认文件名为config.tmp,用户可自行选择是否替换原config），现适用于ubuntu(24.04及更新版本)。
