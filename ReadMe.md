@@ -64,3 +64,8 @@ Linux Live一般指无需安装，可直接运行的Linux运行方式，类似�
 
 - [build](build):打包当前系统。
 - [configure](configure):生成适合当前系统的推荐配置（默认文件名为config.tmp,用户可自行选择是否替换原config），现适用于ubuntu(24.04及更新版本)。
+
+# 相关链接
+
+- linux-live:[https://www.linux-live.org](https://www.linux-live.org)
+- slax:[https://www.slax.org/](https://www.slax.org/)
